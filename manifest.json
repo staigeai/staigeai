@@ -1,1 +1,13 @@
-document.getElementById('submitBtn').addEventListener('click', () => { const scriptInput = document.getElementById('monologueText').value.trim(); const outputDiv = document.getElementById('output'); if (!scriptInput) { outputDiv.innerText = "Please paste a monologue first!"; outputDiv.style.color = "#ff4a4a"; return; } outputDiv.style.color = "#ccc"; outputDiv.innerText = "StAige is analyzing your text structure..."; });
+document.getElementById('submitBtn').addEventListener('click', () => {
+  const scriptInput = document.getElementById('monologueText').value.trim();
+  const outputDiv = document.getElementById('output');
+
+  if (!scriptInput) {
+    outputDiv.innerText = "Please paste a monologue first!";
+    outputDiv.style.color = "#ff4a4a";
+    return;
+  }
+
+  outputDiv.style.color = "#ccc";
+  outputDiv.innerText = "StAige is analyzing your text structure...";
+});
