@@ -1,7 +1,6 @@
 document.getElementById('submitBtn').addEventListener('click', async () => {
   const scriptInput = document.getElementById('monologueText').value.trim();
   const outputDiv = document.getElementById('output');
-
   if (!scriptInput) {
     outputDiv.innerText = "Please paste a monologue first!";
     outputDiv.style.color = "#ff4a4a";
