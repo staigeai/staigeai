@@ -10,16 +10,16 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon.jpg",
-      "32": "icon.jpg",
-      "48": "icon.jpg",
-      "128": "icon.jpg"
+      "16": "icon.png.jpg",
+      "32": "icon.png.jpg",
+      "48": "icon.png.jpg",
+      "128": "icon.png.jpg"
     }
   },
   "icons": {
-    "16": "icon.jpg",
-    "32": "icon.jpg",
-    "48": "icon.jpg",
-    "128": "icon.jpg"
+    "16": "icon.png.jpg",
+    "32": "icon.png.jpg",
+    "48": "icon.png.jpg",
+    "128": "icon.png.jpg"
   }
 }
