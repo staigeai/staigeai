@@ -3,9 +3,23 @@
   "name": "StAige - AI Acting Coach",
   "version": "1.0",
   "description": "Get instant Gemini AI acting feedback on your monologues.",
+  "permissions": [
+    "storage",
+    "aiLanguageModel"
+  ],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icon.png.jpg"
+    "default_icon": {
+      "16": "icon.jpg",
+      "32": "icon.jpg",
+      "48": "icon.jpg",
+      "128": "icon.jpg"
+    }
   },
-  "permissions": ["storage"]
+  "icons": {
+    "16": "icon.jpg",
+    "32": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
+  }
 }
