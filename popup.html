@@ -1,122 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <style>
-    body { 
-      width: 350px; 
-      font-family: 'Helvetica Neue', Arial, sans-serif; 
-      padding: 16px; 
-      margin: 0; 
-      background-color: #0d1117; 
-      color: #c9d1d9; 
-    }
-    .header-banner {
-      text-align: center;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #21262d;
-    }
-    h1 { 
-      color: #58a6ff; 
-      font-size: 24px; 
-      margin: 0 0 4px 0; 
-      font-weight: 600;
-    }
-    .subtitle {
-      font-size: 13px;
-      color: #8b949e;
-      margin: 0;
-    }
-    .section-title {
-      color: #58a6ff;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin: 16px 0 8px 0;
-    }
-    textarea { 
-      width: 93%; 
-      padding: 10px; 
-      border: 1px solid #30363d; 
-      background: #161b22; 
-      color: #f0f6fc; 
-      border-radius: 6px; 
-      resize: none; 
-      font-family: inherit;
-    }
-    textarea:focus {
-      outline: none;
-      border-color: #58a6ff;
-    }
-    button { 
-      background: #1f6feb; 
-      color: white; 
-      border: none; 
-      padding: 12px; 
-      width: 100%; 
-      border-radius: 6px; 
-      font-weight: bold; 
-      font-size: 14px;
-      cursor: pointer; 
-      margin-top: 12px; 
-      transition: background 0.2s;
-    }
-    button:hover { 
-      background: #388bfd; 
-    }
-    .features-list {
-      margin: 0;
-      padding-left: 20px;
-      font-size: 12px;
-      color: #8b949e;
-      line-height: 1.6;
-    }
-    #output { 
-      margin-top: 14px; 
-      font-size: 13px; 
-      line-height: 1.5; 
-      color: #f0f6fc; 
-      white-space: pre-wrap; 
-      background: #161b22;
-      border-radius: 6px;
-      padding: 0;
-    }
-    .footer-text {
-      text-align: center;
-      font-size: 11px;
-      color: #8b949e;
-      margin-top: 16px;
-      border-top: 1px solid #21262d;
-      padding-top: 8px;
-    }
-  </style>
+<meta charset="utf-8">
+<style>
+body { width: 350px; font-family: 'Helvetica Neue', Arial, sans-serif; padding: 16px; margin: 0; background-color: #0d1117; color: #c9d1d9; }
+.header-banner { text-align: center; padding-bottom: 12px; border-bottom: 1px solid #21262d; }
+h1 { color: #58a6ff; font-size: 24px; margin: 0 0 4px 0; font-weight: 600; }
+.subtitle { font-size: 13px; color: #8b949e; margin: 0; }
+.section-title { color: #58a6ff; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; margin: 16px 0 8px 0; }
+textarea { width: 93%; padding: 10px; border: 1px solid #30363d; background: #161b22; color: #f0f6fc; border-radius: 6px; resize: none; font-family: inherit; }
+textarea:focus { outline: none; border-color: #58a6ff; }
+button { background: #1f6feb; color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-weight: bold; font-size: 14px; cursor: pointer; margin-top: 12px; transition: background 0.2s; }
+button:hover { background: #388bfd; }
+.features-list { margin: 0; padding-left: 20px; font-size: 12px; color: #8b949e; line-height: 1.6; }
+#output { margin-top: 14px; font-size: 13px; line-height: 1.5; color: #f0f6fc; white-space: pre-wrap; background: #161b22; border-radius: 6px; padding: 0; }
+.footer-text { text-align: center; font-size: 11px; color: #8b949e; margin-top: 16px; border-top: 1px solid #21262d; padding-top: 8px; }
+</style>
 </head>
 <body>
+<div class="header-banner">
+<h1>StAige</h1>
+<p class="subtitle">Your personal Gemini-powered AI acting coach</p>
+</div>
+<p style="font-size: 12px; line-height: 1.5; color: #8b949e; margin: 12px 0;">
+Upload your monologue or script below to receive detailed insights on emotion, pacing, voice, and character portrayal.
+</p>
+<textarea id="monologueText" rows="4" placeholder="Paste your script or monologue here..."></textarea>
 
-  <div class="header-banner">
-    <h1>StAige</h1>
-    <p class="subtitle">Your personal Gemini-powered AI acting coach</p>
-  </div>
+<button id="submitBtn">Analyze Performance</button>
 
-  <p style="font-size: 12px; line-height: 1.5; color: #8b949e; margin: 12px 0;">
-    Upload your monologue or script below to receive detailed insights on emotion, pacing, voice, and character portrayal.
-  </p>
+<div id="output"></div>
 
-  <textarea id="monologueText" rows="4" placeholder="Paste your script or monologue here..."></textarea>
-  <button id="submitBtn">Analyze Performance</button>
-  
-  <div id="output"></div>
-
-  <div class="section-title">What StAige Evaluates</div>
-  <ul class="features-list">
-    <li>Emotional expression & authenticity</li>
-    <li>Vocal delivery & pacing</li>
-    <li>Character portrayal & engagement</li>
-  </ul>
-
-  <div class="footer-text">
-    Created by Rafael Porat to help young actors worldwide.
-  </div>
+<div class="section-title">What StAige Evaluates</div>
+<ul class="features-list">
+<li>Emotional expression & authenticity</li>
+<li>Vocal delivery & pacing</li>
+<li>Character portrayal & engagement</li>
+</ul>
+<div class="footer-text">
+Created by Rafael Porat to help young actors worldwide.
+</div>
+<script src="popup.js"></script>
 
 </body>
-</html>
