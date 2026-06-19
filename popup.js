@@ -34,7 +34,6 @@ document.getElementById('submitBtn').addEventListener('click', async () => {
         outputDiv.style.color = "#00d2ff";
         await handleCloudFallback(scriptInput, outputDiv);
 
-    } catch (error) {
         outputDiv.innerText = `StAige System Exception: ${error.message || "Execution blocked."}`;
         outputDiv.style.color = "#ff4a4a";
         console.error("StAige Application Error Tracker:", error);
