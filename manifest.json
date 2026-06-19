@@ -1,5 +1,4 @@
-{
-  "manifest_version": 3,
+ "manifest_version": 3,
   "name": "StAige - AI Acting Coach",
   "version": "1.0",
   "description": "Get instant Gemini AI acting feedback on your monologues.",
@@ -7,10 +6,7 @@
     "storage",
     "aiLanguageModel"
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png.jpg"
-  },
+  "options_page": "popup.html",
   "icons": {
     "16": "icon.png.jpg",
     "32": "icon.png.jpg",
