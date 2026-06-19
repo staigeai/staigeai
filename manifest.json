@@ -4,7 +4,8 @@
   "version": "1.0",
   "description": "Get instant Gemini AI acting feedback on your monologues.",
   "permissions": [
-    "storage"
+    "storage",
+    "aiLanguageModel"
   ],
   "action": {
     "default_popup": "popup.html",
